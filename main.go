@@ -64,4 +64,10 @@ func main() {
 		fmt.Printf("Error generating migrations: %v\n", err)
 		return
 	}
+	
+	err = sqlinitygenerator.GenerateMigrationRegistry(config, migrations)
+	if err != nil {
+		fmt.Printf("Error generating migration registry: %v\n", err)
+		return
+	}
 }
