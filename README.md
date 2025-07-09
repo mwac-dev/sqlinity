@@ -20,6 +20,7 @@
 ## 🧠 Why?
 
 Using a sqlite database in a Unity project - although useful - seems niche
+
 For that reason, there's virtually no (at least I couldn't find any) easy to use migration tools for a sqlite + Unity workflow
 This tool fills that gap — letting you manage database evolution in a way that’s versioned, testable, and game-friendly.
 
@@ -180,4 +181,5 @@ i.e.
 
 # 🧑‍💻 License - MIT  
 Use it in your games and tools if you want! Hopefully you find it useful for your use cases.
+
 Tool comes with no warranties - as always use at your own risk and make sure to double check and test all sql queries locally before pushing a build to clients!
