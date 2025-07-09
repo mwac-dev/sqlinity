@@ -1,0 +1,5 @@
+{
+    "sqlFolder": "./migrations",
+    "outputFolder": "./out",
+    "namespace": "MyGame.Database.Migrations"
+}
