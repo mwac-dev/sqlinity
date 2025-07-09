@@ -153,11 +153,15 @@ i.e.
 001_create_players.down.sql
 ```
 
+---
+
 # 💡 Good To Know
 
 - .down.sql is optional — useful for dev resets but not so much at runtime (usually you want to ever migrate up/forward with any changes)
 - Migrations are static .sql files — no parameters or dynamic values
 - Generated C# files are safe to commit — they are your runtime format - just don't manually edit them, if you NEED to change them, edit the related .sql file and then re-generate using the tool
+
+---
 
 # 📌 Roadmap
 - [x] Migration file parser
