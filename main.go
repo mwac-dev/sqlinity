@@ -4,7 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"strings"
 
+	"github.com/mwac-dev/sqlinity/sqlinitycreator"
 	"github.com/mwac-dev/sqlinity/sqlinitygenerator"
 	"github.com/mwac-dev/sqlinity/sqlinityparser"
 	"github.com/mwac-dev/sqlinity/sqlinitytypes"
@@ -28,6 +30,16 @@ func main() {
 	config, err := loadConfig()
 	if err != nil {
 		fmt.Printf("Error loading config: %v\n", err)
+		return
+	}
+	
+	if len(os.Args) >= 3 && os.Args[1] == "create" {
+		rawName := strings.Join(os.Args[2:], " ")
+		err = sqlinitycreator.CreateMigrationFile(config, rawName)
+		if err != nil {
+			fmt.Printf("Error creating migration file: %v\n", err)
+			return
+		}
 		return
 	}
 
