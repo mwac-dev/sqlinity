@@ -36,7 +36,7 @@ cd sqlinity
 go build -o sqlinity
 ```
 
-### Option 2: Make globally available (Windows/Linux/macOS)
+### Make globally available (Windows/Linux/macOS)
 
 Windows: Move sqlinity.exe somewhere like C:\Tools\sqlinity\ and add that folder to your System PATH
 
