@@ -28,7 +28,7 @@ This tool fills that gap — letting you manage database evolution in a way that
 
 ## 📦 Install
 
-### Option 1: Build from source
+### Build from source
 
 ```bash
 git clone https://github.com/mwac-dev/sqlinity
