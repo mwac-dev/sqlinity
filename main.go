@@ -15,7 +15,7 @@ import (
 func loadConfig() (sqlinitytypes.Config, error) {
 	bytes, err := os.ReadFile("sqlinity.config.json")
 	if err != nil {
-		return sqlinitytypes.Config{}, err
+		return sqlinitytypes.Config{},  fmt.Errorf("failed to read sqlinity.config.json - ensure the file exists in the current directory: %w", err)
 	}
 
 	var config sqlinitytypes.Config

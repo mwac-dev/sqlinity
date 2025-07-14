@@ -14,7 +14,7 @@ import (
 func CreateMigrationFile(config sqlinitytypes.Config, rawName string) error {
 	files, err := os.ReadDir(config.SqlFolder)
 	if err != nil {
-		return err
+		return fmt.Errorf("failed to read sql folder - ensure the directory specified in your sqlinity.config.json exists: %w", err)
 	}
 	maxID := 0
 	re := regexp.MustCompile(`^(\d+)_.*\.up\.sql$`)
