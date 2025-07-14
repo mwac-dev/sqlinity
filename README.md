@@ -52,7 +52,8 @@ Now you can run sqlinity from anywhere in your terminal.
 
 ```bash
 my-unity-project/
-├── config.json
+├── sqlinity.config.json
+
 ├── migrations/
 │   ├── 001_create_players.up.sql
 │   ├── 001_create_players.down.sql
@@ -62,9 +63,10 @@ my-unity-project/
 │       └── GeneratedMigrations/
 ```
 
-### 📄 config.json
+### 📄 sqlinity.config.json
 
-Create a config file in your project root:
+
+Create a sqlinity.config.json file in your project root:
 
 ```json 
 {

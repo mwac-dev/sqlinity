@@ -13,7 +13,7 @@ import (
 )
 
 func loadConfig() (sqlinitytypes.Config, error) {
-	bytes, err := os.ReadFile("config.json")
+	bytes, err := os.ReadFile("sqlinity.config.json")
 	if err != nil {
 		return sqlinitytypes.Config{}, err
 	}
